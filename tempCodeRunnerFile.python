@@ -1,0 +1,13 @@
+from signal import pthread_kill
+
+import math
+
+
+j = 0
+Result = 0
+for index in range(0, math.inf):
+    Result += 2 ** (-j)
+    if (Result >= (2 - 0.001)):
+        print()
+    j += 1
+print(j)
